@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# Calculate thge Z Scores of a set of data
+# Calculate the Z Scores of a set of data
 # z = (X – μ) / σ
 # X : Single Data Value
 # μ : Population mean    -> μ = ( Σ Xi ) / N

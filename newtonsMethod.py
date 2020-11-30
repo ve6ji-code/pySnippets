@@ -4,7 +4,7 @@ def SQRT(myValue):
     """Calculate the Square root of a given number: myValue"""
     a = float(myValue)          # cast as float
     epsilon = 0.0000000001      # Set your desired precision
-    x_old_estimation = a-(a/4)  # Initial Guess
+    x_old_estimation = a-(a/4.0)  # Initial Guess - Play with this
     iter = 60                   # Number of iterations
     i = 0
     print('Calculating the square root of : {}'.format(myValue))

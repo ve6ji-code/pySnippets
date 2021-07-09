@@ -1,0 +1,21 @@
+#!/usr/bin/python3
+# Normalize a list of data ove an range [a,b]
+# Xnorm = (b-a)(Xi - Xmin)/(Xmax -Xmin) + a
+# set range
+a = -1
+b = 1
+
+xData = [1, 2, 3, 4, 5]  # Your Data List
+
+
+def normData(xData):
+    normalized = []
+    Xmax = max(xData)
+    Xmin = min(xData)
+    for xi in xData:
+      X = (b-a)*((xi - Xmin)/(Xmax - Xmin)) + a
+      normalized.append(X)
+    return normalized
+
+print(normData(xData))
+#Result for range [-1,1] is [-1.0, -0.5, 0.0, 0.5, 1.0]
